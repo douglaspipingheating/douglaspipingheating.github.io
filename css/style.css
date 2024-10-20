@@ -1,8 +1,43 @@
+/* Navigation styles */
+nav {
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right; /* Centers the nav links right aligned */
+    background-color: #444;  /* Darker background for the nav */
+}
+
+.nav-list li {
+    margin: 0 15px; /* Space between the nav items */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-list a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px;
+}
+
+
 body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: #e31616;
+    background: linear-gradient(to bottom, white, lightblue)
 }
 h1 {
-    color: #6b09f3;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000000;
 }
