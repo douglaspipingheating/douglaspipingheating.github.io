@@ -5,19 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Simple Website</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Douglas Piping & Heating</h1>
-    <nav>
-      <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Contact Us">Contact</a></li>
-      </ul>
-  </nav>
-  </header>
-</body>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+            <li><a href="#aboutUs">About</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+
+    <main>
+      <div class="header-container"> 
+        <!-- <div class="header-image-container">
+          <img id="header-image" alt="Pictures of various heating elements">
+        </div> -->
+        
+        <h1 id="business-name">Douglas Piping & Heating</h1>
+        <div class="header-content">
+          <h2>Family Owned Plumbing Service</h2>
+          <h3 id="h3-contact">Contact Us</h3> 
+        </div>
+      </div>
+      <div class="about-us">
+        <div class="about-us-background">
+          <h2 id="aboutUs">About Us</h2>
+          <p id="aboutUsText">Douglas Piping and Heating is family own business, with over 20 years experienced in residential and commercial services. 
+            With a strong dedication and commitment to our customer's we provide new installs or repairs to your existing equipment. 
+            Call us for all your piping and heating needs. We provide free estimates and look forward in providing your residence or business with quality service.
+          </p>
+        </div>
+      </div> 
+      <div class="services-container">
+        <div class="services-text-background">
+          <h2 id="services">Our Services</h2>
+          <h4>We provide the following services for both commercial and private properties:</h4>
+          <h4>General Plumbing Needs:</h4>
+          <ul style="line-height: 180%;">
+            <li>Bathroom plumbing: We repair and replace showers, toilets, sinks, and all of the connected pipes and drains.</li>
+            <li>Kitchen plumbing: We can install and repair sink faucets and plumbing lines for dishwashers and other appliances.</li>
+            <li>Heating: We repair, replace, or install Heaters & Water Tanks and Plumbing</li>
+            <li>We also provide plumbing inspections</li>
+          </ul>
+          <!-- <p id="subtext">- We repair, replace, or install the following: Showers & Bathtubs, Toilets, Faucets, Heaters & Water Tanks and Plumbing</p>
+          <p id="subtext">- We also provide plumbing inspections</p> -->
+          <h4>Specialties:</h4>
+          <p id="subtext">- Our team specializes in steam, oil, and gas hot water heaters, both tankless and conventional. We'll provide the reliable service you need.</p>
+          <h2 id="estimate">Get a Free Estimate Today!</h2> <!-- make this a button that goes straight to the contact form-->
+        </div>
+      </div>
+      <div class="gallery">
+        <h2 id="gallery-header">Gallery</h2>
+        <p id="gallery">Check out the quality of our work!</p>
+        <!-- add the images here-->
+         <div class="gallery-images">
+          <img id="image1" src="images/image1.png" alt="image of boiler">
+          <img id="image2" src="images/image2.png" alt="image of boiler">
+          <img id="image3" src="images/image3.png" alt="image of boiler">
+          <img id="image4" src="images/IMG_3050.heic" alt="image of shower tiling">
+         </div>
+      </div>
+      <!-- <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"> -->
+          <!-- Access Key -->
+          <!-- <input type="hidden" name="access_key" value="ea5de4ad-99c1-4620-acfb-d4f49c8890be"> -->
+
+          <!-- Form Inputs -->
+          <!-- <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea> -->
+
+          <!-- Honeypot Spam Protection -->
+          <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
+
+          <!-- Custom Confirmation / Success Page -->
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+          <!-- <button type="submit">Submit Form</button>
+        </form>
+        <h4>Want to give us a call?</h4>
+        <p>(111) 111-1111</p>
+      </div> -->
+      <!-- <div class="reminder">
+        <p>* As a general precaution, do not send sensitive information through email!</p>
+      </div> -->
+      
+      
+    </main>
+
+    <footer id="footer">
+      <p>&copy; Douglas Piping & Heating. All rights reserved.</p>
+      <p> Contact Us: (917) 318-2352</p>
+      <p>Read our reviews:
+          <a href="https://www.yelp.com/biz/douglas-piping-and-heating-queens-village">Yelp</a>
+      </p>
+    </footer>
+    <!-- Script content -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
 
 

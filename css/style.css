@@ -1,6 +1,12 @@
 /* Navigation styles */
+Header {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+}
+
 nav {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .nav-list {
@@ -13,7 +19,7 @@ nav {
 }
 
 .nav-list li {
-    margin: 0 15px; /* Space between the nav items */
+    margin: 0 5px; /* Space between the nav items */
 }
 
 .nav-list a {
@@ -21,7 +27,7 @@ nav {
     color: #fff;
     padding: 10px 20px;
     display: block;
-    font-size: 1.1em;
+    font-size: 0.5em;
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
@@ -30,14 +36,261 @@ nav {
     border-radius: 5px;
 }
 
-
-body {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    background: linear-gradient(to bottom, white, lightblue)
+main {
+    flex-grow: 1;
 }
-h1 {
+
+/* Styling for both html and body */
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    font-family: "Roboto", serif;
+    text-align: initial;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background: white;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Header Text Styling */
+
+.header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.header-container {
+    padding-top: 50px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../images/faucet.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.header-image-container {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+#business-name {
+    padding-top: 0px;
+    font-size: 4.5em;
+    font-weight: bold;
+    align-self: flex-start;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+
+    /* Background Highlight Style */
+    /* background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px 100px 10px;
+    border-radius: 5px;
+    display: inline-block; */
+}
+
+.header-content {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-color: rgba(58, 56, 56, 0.703); */
+    color: rgb(215, 213, 213);
+    border-radius: 20px;
+    padding-bottom: 100px;
+}
+
+#h3-contact {
+    cursor: pointer;
+    color: black;
+    background-color: yellow;
+    width: 240px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* About Us */
+.about-us {
+    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: left;
+    background-color: white;
+}
+
+.about-us-background {
+    padding: 50px;
+    background-color: rgba(211, 211, 211, 0.75);
+    border-radius: 20px;
+}
+
+#aboutUs {
     font-size: 2.5em;
     font-weight: bold;
-    color: #000000;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: left;
+    position: relative;
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+#aboutUsText {
+    font-size: 1.2em;
+    margin: 0 auto;
+    text-align: left;
+    font-family: sans-serif;
+    line-height: 2;
+}
+
+/* Services Container */
+
+.services-container {
+    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: left;
+    background-color: rgba(211, 211, 211, 0.75);
+}
+
+.services-text-background {
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#services {
+    font-size: 2.5em;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+#subtext {
+    padding-left: 20px;
+}
+
+/* Gallery Container */
+.gallery {
+    padding: 20px;
+    align-items: left;
+    text-align: left;
+}
+
+#gallery-header {
+    font-size: 2.5em;
+}
+
+#image1, #image2, #image3, #image4 {
+    width: 200px;
+    height: 200px;
+}
+
+/* Contact Form Styling */
+/* .contact-form-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+} */
+
+/* Reminder */
+
+/* .reminder {
+    align-items: center;
+    text-align: center;
+} */
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    
+    min-height: 50px;
+    flex-shrink: 0;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
