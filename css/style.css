@@ -294,3 +294,69 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .header-container {
+      padding: 40px 20px;
+      background-size: cover;
+    }
+  
+    #business-name {
+      font-size: 2em;
+      align-self: center;
+    }
+  
+    .header-content {
+      padding: 10px;
+    }
+  
+    .about-us,
+    .services-container {
+      padding: 20px;
+    }
+  
+    .about-us-background,
+    .services-text-background {
+      padding: 20px;
+    }
+  
+    #aboutUs,
+    #services {
+      font-size: 1.8em;
+      padding-top: 40px;
+      margin-top: -40px;
+    }
+  
+    #aboutUsText,
+    #subtext {
+      font-size: 1em;
+      padding-left: 0;
+    }
+  
+    .gallery-images img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    #image1, #image2, #image3, #image4 {
+      width: 100%;
+      height: auto;
+    }
+  
+    #h3-contact {
+      width: auto;
+      font-size: 1em;
+    }
+  
+    footer {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+  }
